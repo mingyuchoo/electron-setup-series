@@ -5,20 +5,19 @@
 - elelctron
 - @electron-forge/cli
 
+## How to install modules
+
+```bash
+yarn install
+rm -rf node_modules
+yarn install --offline
+```
+
 ## How to run
 
 ```bash
-yarn
 yarn start
 yarn make
-```
-
-or
-
-```bash
-npm install
-npm run start
-npm run make
 ```
 
 ## References
