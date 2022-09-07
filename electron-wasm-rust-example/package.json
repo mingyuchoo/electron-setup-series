@@ -1,0 +1,15 @@
+{
+  "name": "electron-wasm-rust-example",
+  "version": "1.0.0",
+  "description": "A minimal Electron + WebAssembly (WASM) + Rust example.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "github.com/anderejd",
+  "license": "(MIT OR Apache-2.0)",
+  "devDependencies": {
+    "electron": "^20.1.2"
+  }
+}
