@@ -1,36 +1,45 @@
 {
   "name": "es6-react-00-initial",
   "version": "0.1.0",
+  "description": "A minimal Electron application",
   "main": "public/electron.js",
+  "license": "MIT-License",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.1.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^2.0.1"
-  },
-  "devDependencies": {
-    "concurrently": "^6.2.0",
-    "cross-env": "^7.0.3",
-    "electron": "^13.1.4",
-    "electron-builder": "^22.11.7",
-    "electron-is-dev": "^2.0.0",
-    "wait-on": "^6.0.0"
-  },
   "scripts": {
-    "start": "npm run start:electron",
+    "start": "electron-forge start",
     "start:react": "react-scripts start",
     "start:electron": "concurrently \"cross-env BROWSER=none npm run start:react\" \"wait-on http://localhost:3000 && electron .\"",
     "build": "npm run build:react && npm run build:electron",
     "build:react": "react-scripts build",
     "build:electron": "electron-builder",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
     "release": "npm run build:react && npm run release:electron",
     "release:electron": "electron-builder --publish=always",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.65",
+    "@electron-forge/maker-deb": "^6.0.0-beta.65",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.65",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.65",
+    "@electron-forge/maker-zip": "^6.0.0-beta.65",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "cross-env": "^7.0.3",
+    "electron": "^20.1.1",
+    "electron-is-dev": "^2.0.0",
+    "wait-on": "^6.0.1"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +58,32 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "es6_react_00_initial"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
