@@ -16,15 +16,15 @@ Rust setup
 
  1. Install Rust <https://www.rust-lang.org/>
  1. Add the WASM target, `rustup target add wasm32-unknown-unknown`
- 1. Install wasm-bindgen, the __same version__ as in this [Cargo.toml](Cargo.toml), `cargo install -f --version 0.2.47 wasm-bindgen-cli`
+ 1. Install wasm-bindgen, the __same version__ as in this [Cargo.toml](Cargo.toml), `cargo install  wasm-bindgen-cli`
 
-NPM setup
+Yarn setup
 ---------
 
- 1. Install Node.js & NPM
+ 1. Install Node.js & Yarn
  1. Clone this repository `git clone git@github.com:anderejd/electron-wasm-rust-example.git`
  1. Enter the new directory `cd electron-wasm-rust-example`
- 1. Download/install npm dependencies (Electron) for this example, `npm install` <https://electronjs.org/docs/tutorial/installation>
+ 1. Download/install yarn dependencies (Electron) for this example, `yarn install` <https://electronjs.org/docs/tutorial/installation>
 
 Build the Rust code into WASM
 -----------------------------
@@ -34,7 +34,7 @@ Use the `build.sh` or `build.ps1` script to build the WebAssembly module.
 Run the app during development
 ------------------------------
 
-`npm start`
+`yarn start`
 
 Packaging the application for end-users
 ---------------------------------------
