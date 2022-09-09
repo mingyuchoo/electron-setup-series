@@ -1,0 +1,14 @@
+{
+  "name": "es5-rust-wasm-example",
+  "version": "1.0.0",
+  "description": "An Electron WASM App.",
+  "license": "MIT",
+  "author": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^20.1.2"
+  }
+}
