@@ -7,7 +7,7 @@
 
 ## How to install modules
 
-```bash
+```sh
 yarn install
 rm -rf node_modules
 yarn install --offline
