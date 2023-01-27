@@ -2,7 +2,7 @@
 
 ## Rust setup
 
-```sh
+```bash
 rustup target add wasm32-unknown-unknown
 cargo install  wasm-bindgen-cli
 ```
@@ -11,20 +11,20 @@ cargo install  wasm-bindgen-cli
 
 Install Node.js & Yarn
 
-```sh
+```bash
 cd es5-rust-wasm-example
 yarn install
 ```
 
 ## Build the Rust code into WASM
 
-```sh
+```bash
 build.sh
 ```
 
 ## Run the app during development
 
-```sh
+```bash
 yarn start
 ```
 

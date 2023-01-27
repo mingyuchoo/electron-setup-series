@@ -2,19 +2,19 @@
 
 ## How to install dependencies
 
-```sh
+```bash
 yarn install
 ```
 
 ## How to run application
 
-```sh
+```bash
 yarn start
 ```
 
 ## How to packing application on Linux distro.
 
-```sh
+```bash
 sudo pacman -S dpkg rpm
 yarn add --dev @electron-forge/cli
 npx electron-forge import
