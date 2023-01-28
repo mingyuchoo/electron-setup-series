@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://github.com/mingyuchoo/electron-setup-series/issues"><img alt="Issues" src="https://img.shields.io/github/issues/mingyuchoo/electron-setup-series?color=appveyor" /></a>
+  <a href="https://github.com/mingyuchoo/electron-setup-series/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/mingyuchoo/electron-setup-series?color=appveyor" /></a>
+</p>
+
 # electron-setup-series
 
 ## How to install dependencies
